@@ -1,0 +1,48 @@
+body {
+    background-color: white;
+}
+
+img{
+	margin: 25px 25px;
+}
+
+label {
+	display: inline-block;
+	width: 75px;
+	text-align: right;
+	margin: 10px;
+}
+
+.hoverable {
+	background: #FFFFFF url("resources/images/Button.png") top left;
+    height: 42px; 
+    width: 143px;
+	color: rgb(153,217,232);
+
+}
+
+.hoverable:hover {
+    background-image: url("resources/images/ButtonHovered.png");
+	color: rgb(0,162,232);
+}
+
+.floating-box {
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+    border: 3px solid rgb(153,217,232);  
+}
+
+.createAccountFloating-box {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid rgb(153,217,232);  
+}
+
+.after-box {
+    border: 3px solid red; 
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ConnectUrKids</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="resources/images/LoginWaterMark.png"  type="image/x-icon">
+</head>
+	<script>
+	if(isset($_POST['submit']))  // if form was submitted (if you came here with form data)
+	{
+		echo "Success";
+	}
+	else                // if form was not submitted (if you came here without form data)
+	{
+		echo "end";
+	}
+	</script> 
+	<body>
+		<div style="text-align: center;">
+			<img src="resources/images/LoginWaterMark.png" alt="image">
+			<br>
+			<div class="floating-box">
+				<form action="proc/login.php" method="post">
+				   <label for="email">Email:</label><input name="email" id="email" type="text" required>
+				   <br>
+				   <br>
+				   <label for="login_password">Password:</label><input id="login_password" name="login_password" type="text" required>
+				   <br>
+				   <br>
+				   <input type="submit" class="hoverable required" value= "Connections">
+				   <br>
+				   <br>
+					<a href="proc/createAccount.php">Create Account</a>
+				</form> 
+			</div>
+		</div>
+	</body>
+</html>
